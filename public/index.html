@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoAlexis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        🚗 AutoAlexis 
+    </header>
+
+    <main class="contenedor">
+
+        <section class="formulario">
+            <h2>Registrar Vehículo</h2>
+
+            <input type="text" id="marca" placeholder="Marca">
+
+            <input type="text" id="modelo" placeholder="Modelo">
+
+            <input type="number" id="anio" placeholder="Año">
+
+            <input type="text" id="color" placeholder="Color">
+
+            <input type="number" id="precio" placeholder="Precio">
+
+            <select id="estado">
+                <option value="Nuevo">Nuevo</option>
+                <option value="Usado">Usado</option>
+            </select>
+
+            <button onclick="guardarVehiculo()">
+                Guardar Vehículo
+            </button>
+        </section>
+
+        <section class="tabla">
+            <h2>Vehículos Registrados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Color</th>
+                        <th>Precio</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody id="listaVehiculos">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
