@@ -9,22 +9,19 @@
 <body>
 
     <header>
-        🚗 AutoAlexis 
+        🚗 AutoAlexis
     </header>
 
     <main class="contenedor">
 
+        <!-- ================= FORMULARIO ================= -->
         <section class="formulario">
             <h2>Registrar Vehículo</h2>
 
             <input type="text" id="marca" placeholder="Marca">
-
             <input type="text" id="modelo" placeholder="Modelo">
-
             <input type="number" id="anio" placeholder="Año">
-
             <input type="text" id="color" placeholder="Color">
-
             <input type="number" id="precio" placeholder="Precio">
 
             <select id="estado">
@@ -32,15 +29,22 @@
                 <option value="Usado">Usado</option>
             </select>
 
+            <!-- BOTÓN GUARDAR / ACTUALIZAR -->
             <button onclick="guardarVehiculo()">
                 Guardar Vehículo
             </button>
+
+            <!-- BOTÓN CANCELAR EDICIÓN -->
+            <button type="button" onclick="cancelarEdicion()">
+                Cancelar / Limpiar
+            </button>
         </section>
 
+        <!-- ================= TABLA ================= -->
         <section class="tabla">
             <h2>Vehículos Registrados</h2>
 
-            <table>
+            <table border="1" width="100%">
                 <thead>
                     <tr>
                         <th>Marca</th>
@@ -49,11 +53,12 @@
                         <th>Color</th>
                         <th>Precio</th>
                         <th>Estado</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
 
                 <tbody id="listaVehiculos">
-
+                    <!-- aquí se cargan los datos -->
                 </tbody>
             </table>
         </section>
